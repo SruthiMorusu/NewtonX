@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.springframework</groupId>
+    <artifactId>gs-rest-service</artifactId>
+    <version>0.1.0</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.8.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+	    <groupId>com.google.api-client</groupId>
+	    <artifactId>google-api-client</artifactId>
+	    <version>1.23.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty -->
+		<dependency>
+		    <groupId>com.google.oauth-client</groupId>
+		    <artifactId>google-oauth-client-jetty</artifactId>
+		    <version>1.11.0-beta</version>
+		</dependency>
+		<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId> 
+	<artifactId>jackson-databind</artifactId>
+	<version>2.7.1</version> 
+</dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-sheets -->
+<dependency>
+    <groupId>com.google.apis</groupId>
+    <artifactId>google-api-services-sheets</artifactId>
+    <version>v4-rev1-1.21.0</version>
+</dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-java6 -->
+<dependency>
+    <groupId>com.google.oauth-client</groupId>
+    <artifactId>google-oauth-client-java6</artifactId>
+    <version>1.23.0</version>
+</dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client -->
+<dependency>
+    <groupId>com.google.oauth-client</groupId>
+    <artifactId>google-oauth-client</artifactId>
+    <version>1.23.0</version>
+</dependency>
+        
+    </dependencies>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+
+    <build>
+        <plugins>
+            <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk1.8.0_111\bin\javac.exe</executable>
+            </configuration>
+        </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>
