@@ -1,5 +1,5 @@
 # NewtonX
-A RESTful Web Service for Student using Java and Maven
+A RESTful Web Service to search Student Details from Google Spreadsheet using Java and Maven
 
 
 Requirements
